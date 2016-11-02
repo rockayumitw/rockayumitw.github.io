@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+body{
+	background: gray;
+}
+
+#wrapper{
+	width: 80%;
+	margin: auto;
+}
+
+#header{
+	width:100%;
+	height: 200px;
+	background: gray;
+	margin-bottom: 1%;
+}
+
+#top{
+	width: 100%;
+	height: 50%;
+	background: yellow;
+	margin-bottom: 1%;
+}
+
+
+#down{
+	width: 100%;
+	height: 40%;
+	background: #333;
+}
+
+#header_down_left{
+	width: 200px;
+	height: 80px;
+	background: #000;
+	float: left;
+}
+
+
+#footer{
+	background: #333;
+	width: 100%;
+	height: 180px;
+	position: relative;
+	margin-bottom: 5%;
+
+}
+
+#left{
+	width: 19%;
+	height: 800px;
+	background: #666;
+	margin-right: 1%;
+	float: left;
+}
+
+#header_down_right{
+	width: 200px;
+	height: 80px;
+	background: #000;
+	float: right;
+}
+
+#content{
+	width: 100%;
+	height: 800px;
+	margin-bottom: 20px;
+}
+
+#main{
+	width: 80%;
+	height: 800px;
+	background: gray;
+	float: left;
+}
+
+#photo{
+	width: 180px;
+	height: 200px;
+	background: #000;
+	border-radius: 100px;
+	position: absolute;
+	z-index:9 ;
+	bottom: -11px;
+	left: 3%;
+}
+
+#main_top{
+	width: 100%;
+	height: 30%;
+	background: red;
+	float: left;
+	margin-bottom: 1%;
+}
+
+#main_mid{
+	width: 100%;
+	height: 20%;
+	background: #666;
+	float: left;
+	margin-bottom: 1%;
+}
+
+#main_bottom{
+	width: 100%;
+	height: 50%;
+	float: left;
+}
+
+@media (min-width:1200px){
+
+.box{
+	width: 32.333%;
+	height: 95%;
+	margin-bottom: 10px;
+	background: #fff;
+	float: left;
+	margin-right: 1%;
+}
+
+.box:nth-child(3){
+	width: 33.333%;
+	margin-right: 0%;
+}
+
+#nav_phone{
+	display: none;
+}
+
+}
+@media (max-width:1199px){
+
+#wrapper{
+	width: 100%;
+}
+
+#photo{
+	width: 160px;
+	height: 180px;
+	bottom: 0px;
+}
+
+.box{
+	width: 49.5%;
+	height: 96%;
+	background: #fff;
+	float: left;
+}
+
+.box:nth-child(1){
+	margin-right: 1%;
+}
+
+.box:nth-child(3){
+	display: none;
+}
+
+#nav_phone{
+	display: none;
+}
+
+}
+
+@media (max-width:767px){
+
+#content{
+	height: 1600px;
+	background: orange;
+}
+
+#left{
+	display: none;
+}
+
+#nav_phone{
+	width: 100%;
+	height: 800px;
+	background: blue;
+	margin-right: 1%;
+	float: left;
+	display: block;
+	margin-bottom: 1%;
+}
+
+#main{
+	width: 100%;
+}
+
+#photo{
+	display: none;
+}
+
+
+
+.box{
+	width: 100%;
+	height: 30%;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.box:nth-child(3){
+	display: block;
+}
+
+}

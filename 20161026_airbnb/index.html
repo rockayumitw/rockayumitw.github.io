@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/airbnb_RWD.css" type="text/css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<div id="header">
+	<video  autoplay loop id="vgb" src="video/bg.mp4"></video>
+	<div id="header_top">
+		<div id="top_logo"></div>
+		
+		<div id="nav_phone" style="font-size:30px;cursor:pointer" onclick="openNav()" ></div>
+
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#">首頁</a>
+			  <a href="#">下載應用程式</a>
+			  <a href="#">成為房東</a>
+			  <a href="#">註冊</a>
+		</div>
+		
+		<script>
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
+
+		<div id="top_serch">想去哪裡?</div>
+		<div id="top_button">
+			<div class="button_A"><a href="#">成為房東</a>
+			<span class="message_box">在Taichung分享住宅，您一周內可以賺得$5,222TWD。成為一名房東吧。</span>
+			</div>
+			<div class="button_B" style="border-left:solid 1px #ccc"><a href="#">幫助</a></div>
+			<div class="button_B"><a href="#">註冊</a></div>
+			<div class="button_B"><a href="#">登入</a></div>
+		</div>
+	</div>
+	<div id="header_mid">
+		<div id="header_box">
+			<div class="title">
+				<h2 class="mid_title">LIVE THERE</h2>
+				<h4 class="mid_subtitle">向超過191個國家的當地房東預定房源，體驗家一樣的感覺</h4>
+			</div>
+			<div class="mid_button"><a href="#">如何使用Airbnb</a></div>
+		</div>
+	</div>
+	<div id="header_down">
+		<div id="booking_phone_serch">
+			<div class="booking_phone_serch_area">
+				想去哪裡?
+			</div>
+			<div class="booking_phone_serch_btn">
+				S
+			</div>
+		</div>
+		<div id="booking">
+			<div class="booking_where">想去哪裡?</div>
+			<div class="booking_date"></div>
+			<div class="booking_people"></div>
+			<div class="booking_serch"><a href="#">搜尋</a></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="container">
+	<div id="week_box">
+		<div class="week_title">周末好去處</div>
+		<div class="week_subtitle">發現離家近的好地方</div>
+	</div>
+	<div id="week_location">
+		<div class="boxA">
+			<div class="week_box_title">
+				<div class="h2">首爾</div>
+			</div>
+		</div>
+		<div class="boxB">
+			<div class="week_box_title">
+				<div class="h2">大阪</div>
+			</div>
+		</div>		
+		<div class="boxC">
+			<div class="week_box_title">
+				<div class="h2">京都</div>
+			</div>
+		</div>
+	</div>
+	<div id="location_serch">
+		<div class="location_btn_serch">
+			<a href="#">查看所有目的地</a>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
