@@ -307,6 +307,7 @@
 				});
 				// external js: masonry.pkgd.js
 				time=window.setInterval(function(){
+					console.log($(".card-img-top").first().height());
 					if($(".card-img-top").first().height()==0) return false;
 					window.clearInterval(time);
 					$('.grid').masonry({
