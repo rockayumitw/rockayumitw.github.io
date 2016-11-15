@@ -111,7 +111,7 @@
 		// {
 		//     $(".mygallery").chromaGallery();
 		// });
-		$(document).ready(function(){
+		/*$(document).ready(function(){
 			$(".mygallery").chromaGallery
 		({
 		color:'#000',
@@ -120,8 +120,30 @@
 		dof:true,
 		screenOpacity:0.8
 		});
-		});
+		});*/
+		$(document).ready(function(){
+				var time=null;
+				$(".mygallery").chromaGallery({
+					color:'#000',
+					gridMargin:15,
+					maxColumns:5,
+					dof:true,
+					screenOpacity:0.8
+				});
+				// external js: masonry.pkgd.js
+				time=window.setInterval(function(){
+					/*console.log($(".card-img-top").first().height());*/
+					if($(".card-img-top").first().height()==0) return false;
+					window.clearInterval(time);
+					$('.grid').masonry({
+						itemSelector: '.grid-item',
+					// columnWidth: 160
+					});
+				},100);
+			});
 		
 	</script>
+
+
 </body>
 </html>
