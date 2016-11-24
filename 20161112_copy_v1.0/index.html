@@ -373,8 +373,9 @@
 												<img class="card-img-top"  src="img/WEB_1.jpg" alt="Card images cap">
 												<h4 class="card-title">上和海運科技股份有限公司</h4>
 												<p class="card-text">網站設計兼切版製作</p>
-												
+												<br>
 												<a href="http://www.twshanghe.com.tw/" class="btn btn-primary">Link</a>
+												<br>
 											</div>
 										</div>
 									</div>
@@ -384,8 +385,9 @@
 												<img class="card-img-top"  src="img/WEB_2.jpg" alt="Card images cap">
 												<h4 class="card-title">台灣寶典科技股份有限公司</h4>
 												<p class="card-text">網站設計兼切版製作</p>
-												
+												<br>
 												<a href="http://taiwaneas.ezsale.tw/" class="btn btn-primary">Link</a>
+												<br>
 											</div>
 										</div>
 									</div>
@@ -395,8 +397,9 @@
 												<img class="card-img-top"  src="img/WEB_3.jpg" alt="Card images cap">
 												<h4 class="card-title">職訓局訓練網站設計</h4>
 												<p class="card-text">作業-Mazda 官網</p>
-												
+												<br>
 												<a href="#web_design" class="btn btn-primary">NO_Link</a>
+												<br>
 											</div>
 										</div>
 									</div>
@@ -406,8 +409,9 @@
 												<img class="card-img-top"  src="img/WEB_21.jpg" alt="Card images cap">
 												<h4 class="card-title">個人網站v2</h4>
 												<p class="card-text">個人網站設計</p>
-												
+												<br>
 												<a href="../20161112_copy_v2.0/index.html" class="btn btn-primary">Link</a>
+												<br>
 											</div>
 										</div>
 									</div>
@@ -474,17 +478,29 @@
 	<script src="js/chromagallery.pkgd.min.js"></script>
 	<script src="js/connetparticle.js"></script>
 	<script src="js/skill.js"></script>
+	<script src="js/masonry-docs.min.js"></script>
+	<script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$(".mygallery").chromaGallery
-		({
-		color:'#000',
-		gridMargin:15,
-		maxColumns:5,
-		dof:true,
-		screenOpacity:0.8
-		});
-		});
+				var time=null;
+				$(".mygallery").chromaGallery({
+					color:'#000',
+					gridMargin:15,
+					maxColumns:5,
+					dof:true,
+					screenOpacity:0.8
+				});
+				// external js: masonry.pkgd.js
+				time=window.setInterval(function(){
+					/*console.log($(".card-img-top").first().height());*/
+					if($(".card-img-top").first().height()==0) return false;
+					window.clearInterval(time);
+					$('.grid').masonry({
+						itemSelector: '.grid-item',
+					// columnWidth: 160
+					});
+				},100);
+			});
 		/*skill*/
 		
 	</script>

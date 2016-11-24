@@ -106,7 +106,8 @@ background: rgba(157, 187, 63, .85);
 	background: #fff;
 	width: 100%;
 	text-align: center;
-	padding: 10px;
+	padding-bottom: 10px;
+	/*padding: 10px;*/
 }
 .card-img-top{
 	width: 100%;
