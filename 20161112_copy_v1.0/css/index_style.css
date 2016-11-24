@@ -57,7 +57,7 @@ hr{
 	right: 25px;
 	top: 70vh;
 	color: #fff;
-	font-size: 30pt;
+	font-size: 2em;
 }
 
 #pc_title{
@@ -305,6 +305,7 @@ padding: 20px;
 #skill{
 	padding-top: 140px;
 	padding-bottom: 240px;
+	background: #000;
 }
 
 .skill_title_bg{
@@ -318,12 +319,14 @@ padding: 20px;
 	font-size: 20pt;
 	font-weight: bold;
 	padding-top: 10px;
-	padding-bottom: 180px;
+	margin-bottom: 180px;
+	background-position: center;
 }
 
 .nitin{
 		text-align:center;
 		}
+
 .skill_title{
 	text-align: center;
 	color: #fff;
@@ -459,6 +462,7 @@ padding: 20px;
 	left: 70px;
 	top: 150px;
 	width: 30%;
+	margin-left: 80px;
 	transition-duration: 1s;
 	}
 
@@ -527,5 +531,12 @@ padding: 20px;
 	}
 	
 	#phone_menu{display:block;position:fixed;z-index:999;background:#000;}
-	#pc_title{width:45%;top:200px;left:20px;}
+	#pc_title{width:45%;top:200px;left:20px;margin-left:0;}
+	.sit_map{
+	padding-top: 20px;
+	color: #ccc;
+	font-size: 25pt;
+	list-style: none;
+	text-align: center;
+}
 }

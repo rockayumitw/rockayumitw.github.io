@@ -18,7 +18,7 @@
 
 			ctx_one.textAlign = 'center';//中心
 			ctx_one.font = "20px Arial";//字體
-			ctx_one.fillStyle = '#FFF';//字體顏色
+			ctx_one.fillStyle = '#fff';//字體顏色
 				ctx_one.beginPath();
 				ctx_one.arc(140, 140, 60, start, diff_one/10+start, false);
 			//圓大小
@@ -37,7 +37,7 @@
 
 
 		/*two*/
-			var ctx_two = document.getElementById('skill_two').getContext('2d');
+		var ctx_two = document.getElementById('skill_two').getContext('2d');
 		var al_two = 0;
 		var start = 4.72;
 		var cw = ctx_two.canvas.width;
@@ -56,7 +56,7 @@
 
 			ctx_two.textAlign = 'center';//中心
 			ctx_two.font = "20px Arial";//字體
-			ctx_two.fillStyle = '#FFF';//字體顏色
+			ctx_two.fillStyle = '#fff';//字體顏色
 				ctx_two.beginPath();
 				ctx_two.arc(140, 140, 60, start, diff_two/10+start, false);
 			//圓大小
@@ -92,7 +92,7 @@
 
 			ctx_three.textAlign = 'center';//中心
 			ctx_three.font = "20px Arial";//字體
-			ctx_three.fillStyle = '#FFF';//字體顏色
+			ctx_three.fillStyle = '#fff';//字體顏色
 				ctx_three.beginPath();
 				ctx_three.arc(140, 140, 60, start, diff_three/10+start, false);
 			//圓大小
@@ -129,7 +129,7 @@
 
 			ctx_four.textAlign = 'center';//中心
 			ctx_four.font = "20px Arial";//字體
-			ctx_four.fillStyle = '#FFF';//字體顏色
+			ctx_four.fillStyle = '#fff';//字體顏色
 				ctx_four.beginPath();
 				ctx_four.arc(140, 140, 60, start, diff_four/10+start, false);
 			//圓大小
