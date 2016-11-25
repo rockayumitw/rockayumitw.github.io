@@ -410,6 +410,17 @@ padding: 20px;
 	background-color: #fff;
 }
 
+@media(max-width:1200px){
+	#banner{
+		background-attachment: inherit;
+	}
+	#boxA{
+		background-attachment: inherit;
+	}
+
+}
+
+
 @media(max-width:990px){
 	.introA_img{
 		padding-bottom: 0;
