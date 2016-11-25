@@ -405,7 +405,9 @@ body{
 	#footer_area{
 		height: 80vh;
 	}
-	
+	#bg{
+		background-attachment: inherit;
+	}
 
 }
 
