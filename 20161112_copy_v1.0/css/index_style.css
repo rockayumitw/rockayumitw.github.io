@@ -515,6 +515,7 @@ padding: 20px;
 
 @media(max-width:767px){
 	#banner{background-attachment:inherit;}
+	#boxA{background-attachment:inherit;}
 	.panel:target{
 		margin-left: 0;
 	}
