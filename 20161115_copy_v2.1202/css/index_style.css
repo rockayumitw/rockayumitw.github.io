@@ -93,6 +93,10 @@ body{
 	display: block;
 }
 
+#bs-example-navbar-collapse-1{
+	background: #fff;
+}
+
 #area{
 	position: relative;
 	z-index: 333;
@@ -355,6 +359,7 @@ body{
 }
 
 @media(max-width:1200px){
+	#bg{background-attachment:inherit;}
 	.carousel-inner{
 	height: calc(100vh / 2);
 	transition-duration: 0.5s;
