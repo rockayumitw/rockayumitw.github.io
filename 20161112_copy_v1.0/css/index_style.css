@@ -562,6 +562,7 @@ padding: 20px;
 	list-style: none;
 	text-align: center;
 	}
+	form{text-align:center;}
 	.form_text_area{
 	width: calc(100% / 3 + 55vw);
 	}
