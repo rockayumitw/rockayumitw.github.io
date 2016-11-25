@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>index</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+		html, body {
+		margin:0;
+		padding:0;
+		}
+
+		#banner{
+			width: 100%;
+			height: 400px;
+			background: #ccc;
+				}
+		
+		#main{
+			width: 100%;
+			height: 400px;
+			background: red;
+		}
+		#main{
+			width: 100%;
+			height: 400px;
+			background: gray;
+		}
+		#boxA{
+			width: 100%;
+			height: 400px;
+		}
+		#footer{
+			width: 100%;
+			height: 400px;
+			background: gray;
+		}
+
+		/*body { background:transparent; }*/
+		body:after {
+		content:"";
+		position:fixed;
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		z-index:-1;
+		display:block;
+		background:url(pic/1.jpg) no-repeat 50% 50%;
+		background-size:cover;
+		}
+		p {background:#fff;margin:0;padding:1em}
+		.parallax{height:250px;border:5px solid red;}
+		</style>
+		
+	</head>
+	<body>
+		<div id="wrapper">
+				<div id="header">header</div>
+				<div id="banner">banner</div>
+				<div id="main"></div>
+				<div id="boxA" class="parallax">boxA</div>
+				<div id="main"></div>
+				<div id="boxA" class="parallax">boxA</div>
+				<div id="footer">footer</div>
+		</div>
+
+		
+		
+	</body>
+</html>
+</html>
