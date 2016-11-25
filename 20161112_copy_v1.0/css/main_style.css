@@ -29,13 +29,6 @@ span:hover{
 }
 
 
-#left_menu{
-	width: 100px;
-	height: 100vh;
-	background:#000;
-	z-index: 999;
-	position: fixed;
-}
 
 
 
@@ -107,6 +100,15 @@ span:hover{
 }
 
 /************left_menu***************/
+
+#left_menu{
+	width: 100px;
+	height: 100vh;
+	background:#000;
+	z-index: 999;
+	position: fixed;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
