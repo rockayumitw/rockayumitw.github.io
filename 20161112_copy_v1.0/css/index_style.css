@@ -563,10 +563,11 @@ padding: 20px;
 	text-align: center;
 	}
 	form{text-align:center;}
+	label{width:100%;}
 	.form_text_area{
-	width: calc(100% / 3 + 55vw);
+	width: calc(100% / 2 + 50%);
 	}
 	.form_text_message{
-	width: calc(100% / 3 + 55vw);
+	width: calc(100% / 2 + 50%);
 	}
 }
