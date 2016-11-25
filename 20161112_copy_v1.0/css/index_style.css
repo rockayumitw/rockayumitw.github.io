@@ -516,6 +516,7 @@ padding: 20px;
 @media(max-width:767px){
 	#banner{background-attachment:inherit;}
 	#boxA{background-attachment:inherit;}
+	.banner_title{padding-top:45vh;display:block;text-align:center;}
 	.panel:target{
 		margin-left: 0;
 	}
