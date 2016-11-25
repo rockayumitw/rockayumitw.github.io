@@ -561,5 +561,11 @@ padding: 20px;
 	font-size: 25pt;
 	list-style: none;
 	text-align: center;
-}
+	}
+	.form_text_area{
+	width: calc(100% / 3 + 55vw);
+	}
+	.form_text_message{
+	width: calc(100% / 3 + 55vw);
+	}
 }
