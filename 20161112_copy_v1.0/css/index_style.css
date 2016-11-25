@@ -218,12 +218,12 @@ background: rgba(157, 187, 63, .85);
 	width: 100%;
 	height: 98vh;
 	background-attachment: fixed;
-	 -webkit-background-size: cover;
+	/* -webkit-background-size: cover;
   	 -moz-background-size: cover;
   	 -o-background-size: cover;
  	 -webkit-background-attachment: cover;
   	 -moz-background-attachment: cover;
-  	 -o-background-attachment: cover; 	 
+  	 -o-background-attachment: cover; 	*/ 
 }
 }
 
