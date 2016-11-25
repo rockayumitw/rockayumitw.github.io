@@ -447,16 +447,26 @@ padding: 20px;
 	padding-right: 15px;
 }
 
+	.banner_title{
+		padding-top: 35vh;
+		text-align: center;
+	}
 
 @media(max-width:1440px){
 
 	.content{
 	position:static;
+	width: auto;
 	}
 }
 
 
 @media(max-width:990px){
+	.banner_title{
+		padding-top: 35vh;
+		text-align: center;
+	}
+
 	.introA_img{
 		padding-bottom: 0;
 	}
