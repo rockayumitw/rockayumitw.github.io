@@ -4,4 +4,4 @@ index2:使用jquery,但是會有點問題
 
 index3:滾動視差+動畫
 
-index4:拆解index3
+index4:拆解index3並加入sticky menu
