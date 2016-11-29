@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">-->
+  <link rel="stylesheet" href="css/animate.css">
+  <style>
+@import url(http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic&subset=latin,latin-ext);
+body, html, p, a, span {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Lato', serif;
+  font-weight: 300;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.grid a {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 20%;
+  height: 33.33333%;
+  float: left;
+  overflow: hidden;
+  background: #2c3e50;
+}
+.grid a:-webkit-any-link {
+  text-decoration: none;
+}
+.grid a span {
+  position: absolute;
+  bottom: .6em;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-transition: all 0.5s ease 0.1s;
+  -o-transition: all 0.5s ease 0.1s;
+  -webkit-transition: all 0.5s ease;
+  -webkit-transition-delay: 0.1s;
+  transition: all 0.5s ease 0.1s;
+  font-size: 1.5em;
+  color: #fff;
+}
+.grid a i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transition: all 0.5s ease 0.1s;
+  -o-transition: all 0.5s ease 0.1s;
+  -webkit-transition: all 0.5s ease;
+  -webkit-transition-delay: 0.1s;
+  transition: all 0.5s ease 0.1s;
+  font-size: 6.8em;
+}
+.grid a .info {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.grid a .info li {
+  list-style-type: circle;
+  -moz-transform: translateX(150%);
+  -ms-transform: translateX(150%);
+  -webkit-transform: translateX(150%);
+  transform: translateX(150%);
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: .2em 0;
+}
+.grid a .css-logo {
+  background-image: url(http://i.imgur.com/2Sacl3P.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.grid a .jq-logo {
+  background-image: url(http://i.imgur.com/H1CXucS.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+.grid a .js-logo {
+  background-image: url(http://i.imgur.com/LMnGxpE.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.grid a .php-logo {
+  background-image: url(http://i.imgur.com/QmJasqB.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+.grid a .wordpress-logo {
+  background-image: url(http://i.imgur.com/g6DjpC1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 1024px) {
+  .grid a:nth-child(odd) {
+    background-color: #31465a;
+  }
+}
+@media (max-width: 1024px) {
+  .grid a {
+    width: 25%;
+  }
+  .grid a i {
+    font-size: 5.8em;
+  }
+  .grid a .css-logo, .grid a .js-logo, .grid a .wordpress-logo {
+    width: 71.42857px;
+    height: 71.42857px;
+  }
+  .grid a .jq-logo {
+    width: 130px;
+    height: 130px;
+  }
+  .grid a .php-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .grid a span {
+    font-size: 1.25em;
+  }
+  .grid a .info li {
+    font-size: 80%;
+  }
+}
+@media (min-width: 751px) and (max-width: 1024px) {
+  .grid a:nth-child(odd) {
+    background-color: #2c3e50;
+  }
+  .grid a:nth-child(1) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(3) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(6) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(8) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(9) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(11) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(14) {
+    background-color: #31465a;
+  }
+}
+@media (min-width: 551px) and (max-width: 750px) {
+  .grid a {
+    width: 33.33333%;
+  }
+  .grid a:nth-child(odd) {
+    background-color: #31465a;
+  }
+}
+@media (max-height: 620px) {
+  .grid a i {
+    font-size: 4em;
+  }
+  .grid a .css-logo, .grid a .js-logo, .grid a .wordpress-logo {
+    width: 58.82353px;
+    height: 58.82353px;
+  }
+  .grid a .php-logo {
+    width: 83.33333px;
+    height: 83.33333px;
+  }
+  .grid a .jq-logo {
+    width: 115px;
+    height: 115px;
+  }
+}
+@media (min-width: 321px) and (max-width: 550px) {
+  .grid a {
+    width: 50%;
+  }
+  .grid a:nth-child(1) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(4) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(5) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(8) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(9) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(12) {
+    background-color: #31465a;
+  }
+  .grid a:nth-child(13) {
+    background-color: #31465a;
+  }
+}
+@media (max-width: 320px) {
+  .grid a {
+    width: 100%;
+  }
+  .grid a:nth-child(2n+1) {
+    background-color: #31465a;
+  }
+}
+.grid a {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.grid a:hover {
+  z-index: 15;
+  background: #e74c3c;
+}
+
+.grid a:hover .info li {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.grid a:hover span {
+  -moz-transform: translateX(-500%);
+  -ms-transform: translateX(-500%);
+  -webkit-transform: translateX(-500%);
+  transform: translateX(-500%);
+}
+
+.grid a:hover i {
+  -moz-transform: translateX(-450%) translateY(-50%);
+  -ms-transform: translateX(-450%) translateY(-50%);
+  -webkit-transform: translateX(-450%) translateY(-50%);
+  transform: translateX(-450%) translateY(-50%);
+}
+
+  </style>
+
+</head>
+
+
+
+<body>
+<section class="grid">
+  <a href="http://www.reddit.com/r/design_critiques">        
+      <i class="ion-ribbon-a"></i>
+      <span>/r/design_critiques</span>    
+      <section class="info">
+        <ol>
+          <li>Constructive criticism is paramount</li>
+          <li>Identify both positives and negatives</li>
+          <li>Provide solutions or advice to fix the negatives</li> 
+        </ol>
+      </section>
+    </a>
+  <a href="http://www.reddit.com/r/webhosting">   
+    <i class="ion-ios7-cloud"></i>
+    <span>/r/webhosting</span>      
+    <section class="info">
+      <ol>
+        <li>This is a place to discuss everything related to Webhosting</li>
+        <li>shared hosting to dedicated servers, and everything in between</li>
+        <li>Post reviews of your current and past hosts, pose questions to the community regarding your needs</li>       
+      </ol>      
+    </section> 
+  </a>  
+  <a href="http://www.reddit.com/r/crappydesign">   
+    <i class="ion-thumbsdown"></i>
+    <span>/r/crappydesign</span>      
+    <section class="info">
+      <ol>
+        <li>This subreddit is dedicated to calling out crappy design</li>
+        <li>KARMAWHORING IS ENCOURAGED IN THIS SUBREDDIT</li>
+        <li>It's all about the laughs and enjoying your time here</li>
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/userexperience">   
+    <i class="ion-ios7-star"></i>
+    <span>/r/userexperience</span>    
+    <section class="info">
+      <ol>
+        <li>Sagittis lobortis odio a consectetur lacus pharetra ridiculus in dui dui sit scelerisque nibh ut proin</li>
+        <li>Nec arcu tempor pretium nostra dui a a dui ultrices</li>
+        <li>Lacus vestibulum luctus lobortis ad nibh hac eu fringilla nisl</li>    
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/webdev">   
+    <i class="ion-code"></i>
+    <span>/r/webdev</span>      
+    <section class="info">
+      <ol>
+        <li>Please provide links that are useful resources and will help out a community</li>
+        <li>Please feel free to ask for help or advice, but if you do be as thorough as possible </li>
+        <li>Please try to avoid posting memes, screenshots of bad websites or jokes</li> 
+      </ol>
+    </section> 
+  </a>
+  <a href="http://www.reddit.com/r/css">    
+    <i class="css-logo"></i>
+    <span class="css">/r/css</span>   
+    <section class="info">
+      <ol>
+        <li>CSS, short for Cascading Style Sheets, is used almost universally across the web to affect the design and appearance of every website you visit</li>
+        <li>Here in /r/css, you've got a place on reddit to talk about CSS</li>
+        <li>We welcome all CSS discussion here</li>            
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/jquery">   
+    <i class="jq-logo"></i>       
+    <span class="jquery" >/r/jquery</span>      
+    <section class="info">
+      <ol>
+        <li>News, articles, plugins and tutorials</li>
+        <li>jQuery Core, jQuery UI, jQuery Mobile, and other related projects</li>
+        <li>We welcome all jQuery (and related) discussion here</li>
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/javascript">   
+    <i class="js-logo"></i>
+    <span>/r/javascript</span>      
+    <section class="info">
+      <ol>
+        <li>Posts must be related to JavaScript, even if indirectly</li>
+        <li>Meme posts are prohibited</li>
+        <li>If you'd like to show off your latest project, then that's great!</li>            
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/php">    
+    <i class="php-logo"></i>
+    <span class="php">/r/php</span>     
+    <section class="info">
+      <ol>
+        <li>Posts must be related to PHP, even if indirectly</li>
+        <li>Do not advertise, unless you are sharing PHP-relevant content</li>
+        <li>Keep your personal conflicts private</li>            
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/wordpress">    
+    <i class="wordpress-logo"></i>
+    <span class="wordpress">/r/wordpress</span>     
+    <section class="info">
+      <ol>
+        <li>This is not the place to share your blog or talk about blogging in general</li>
+        <li>/r/WordPress is for WordPress discussion not design</li>
+        <li>Don't use bitly or similar when posting links or links within comments</li>            
+      </ol>      
+    </section>
+  </a>  
+  <a href="http://www.reddit.com/r/talesfromdesigners">   
+    <i class="ion-ios7-chatboxes"></i>
+    <span>/r/talesfromdesigners</span>    
+    <section class="info">
+      <ol>
+        <li>The subreddit for all your funny, embarrassing or depressing design related stories</li>
+        <li>Limit submissions to self posts and keep clients and businesses anonymous</li>
+        <li>Don't use bitly or similar when posting links or links within comments</li>            
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/webmarketing">   
+    <i class="ion-arrow-graph-up-right"></i>
+    <span>/r/webmarketing</span>      
+    <section class="info">
+      <ol>
+        <li>This subreddit hosts discussions and links to articles about web marketing</li>
+        <li>Email marketing, online PR, social media, SEO, ...</li>
+        <li>We are all about the combination of different channels and content types to achieve maximum reach and ROI</li>    
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/dotcom">   
+    <i class="ion-ios7-world"></i>
+    <span>/r/dotcom</span>      
+    <section class="info">
+      <ol>
+        <li>/r/DotCom is dedicated to bootstrapping internet business from the ground up</li>
+        <li>Like anything else, building an internet business requires time, dedication and education</li>
+        <li>Be wary of anyone promising overnight fortunes</li>    
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/somebodymakethis">   
+    <i class="ion-ios7-lightbulb"></i>
+    <span>/r/somebodymakethis</span>      
+    <section class="info">
+      <ol>
+        <li>Got an idea for something that would be really damn cool, but don't have the time, money, or skills to pull it off yourself?</li>
+        <li>Maybe someone else has the resources, but just lacks the idea</li>
+        <li>Posts without a SMT: tag will be deleted. You may repost</li>    
+      </ol>      
+    </section>
+  </a>
+  <a href="http://www.reddit.com/r/design">   
+    <i class="ion-contrast"></i>
+    <span>/r/design</span>    
+    <section class="info">
+      <ol>
+        <li>NO MEMES or other types of non-content</li>
+        <li>Do not ask for free work</li>
+        <li>Don't submit only your own work/projects</li>    
+      </ol>      
+    </section>
+  </a>
+</section>
+
+<script src="js/jquery.min.js"></script>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

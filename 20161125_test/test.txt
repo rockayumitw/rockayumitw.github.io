@@ -1,0 +1,11 @@
+index1 : 滾動視差第一種:背景只有一張圖片
+
+index2:使用jquery,但是會有點問題
+
+index3:滾動視差+動畫
+
+index4:拆解index3並加入sticky menu
+
+index5:one page scroll
+
+index6:icon滑入滑出
