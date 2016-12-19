@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 img {
-    border:0px;
+    border:none;
 }
 a {
     text-decoration: none;
