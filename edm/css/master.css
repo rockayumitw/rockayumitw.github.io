@@ -104,7 +104,7 @@ body{
     width:869px;
     height:412px;
     margin-left: 28px;
-    cursor: default; //把指標改為無按鈕狀態
+    cursor: default; 
 }
 .banner_pic_b img {
     width: 100%;
