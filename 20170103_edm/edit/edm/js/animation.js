@@ -27,18 +27,10 @@ $(document).ready(function (){
         });
     }
 
-      
-
-       /* if(isIE)){
-            setTimeout(partA,50);
-            setTimeout(titleA,1800); 
-        }
-*/
         if(isIE(9)){ 
-        ani_opacity();
-        setTimeout(partA,50);
-        setTimeout(titleA,1800);  
-       
+            ani_opacity();
+            setTimeout(partA,50);
+            setTimeout(titleA,1800);  
         }
 
         function ani_opacity(){
@@ -50,7 +42,6 @@ $(document).ready(function (){
             $('.title-h2').css("opacity","0");  
         }
           
-
         function partA(){            
             $('.part').animate({transform:'scale(.1)', left:'500', opacity:'0'},50);
             $('.part').animate({transform:'scale(1)', left:'749',opacity:'1'},2000);
@@ -68,12 +59,12 @@ $(document).ready(function (){
             $(".title-h2").animate({opacity:'1',top:'74', left:'336'},800);   
         }
 
-
-
-
+        
      if(isIE(8)){
+        /*$(".title-h2, .part").hide();*/
         ani_opacity();
         $('.title-h2').css("opacity","0");
+       /* $(".title-h2, .part").show();*/
        setTimeout(titleA,1800); 
        setTimeout(partB,50); 
 
