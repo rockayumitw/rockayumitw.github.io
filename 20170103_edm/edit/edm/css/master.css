@@ -6,7 +6,7 @@
 a{
     border: none;
     outline: none;
-    behavior:expression(this.onFocus=this.blur());
+   /* behavior:expression(this.onFocus=this.blur());*/
 }
 body {
     width: 1903px;
