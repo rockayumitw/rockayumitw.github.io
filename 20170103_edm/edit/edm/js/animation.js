@@ -18,19 +18,21 @@ $(document).ready(function (){
                 });
             }
         });
-        $('.part').css("opacity","0");
-        $('.title-bg').css("opacity","0");
-        $('.title-h1').css("opacity","0");
-        $('.title-p1').css("opacity","0");
-        $('.title-p2').css("opacity","0");
-        $('.title-h2').css("opacity","0");
-
+       
     }
         
 
     //if(isIE(9)){
 //IE8/9用的動畫
         
+        /*$('.part').css("opacity","0");
+        $('.title-bg').css("opacity","0");
+        $('.title-h1').css("opacity","0");
+        $('.title-p1').css("opacity","0");
+        $('.title-p2').css("opacity","0");
+        $('.title-h2').css("opacity","0");*/
+
+
         setTimeout(partA,50);
         function partA(){            
             $('.part').animate({transform:'scale(.1)', left:'500', opacity:'0'},50);
@@ -54,11 +56,11 @@ $(document).ready(function (){
 
      if(isIE(8)){
         $('.part').css({opacity:"0",});
-        /*$('.title-bg').css("opacity","0");
+        $('.title-bg').css("opacity","0");
         $('.title-h1').css("opacity","0");
         $('.title-p1').css("opacity","0");
         $('.title-p2').css("opacity","0");
-        $('.title-h2').css("opacity","0");*/
+        $('.title-h2').css("opacity","0");
 
         setTimeout(titleB,1800); 
         function titleB(){            
