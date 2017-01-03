@@ -41,17 +41,17 @@ $(document).ready(function (){
        /* stopAnimation();*/
         ani_opacity();
         $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').show();
-        setTimeout(titleA,1800); 
-        setTimeout(partB,50);   
+/*setTimeout(titleA,1800); 
+        setTimeout(partB,50);   */
          }
 
-        function stopAnimation()
+        /*function stopAnimation()
         {
         $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("-webkit-animation", "none");
         $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("-moz-animation", "none");
         $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("-ms-animation", "none");
         $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("animation", "none");
-        }
+        }*/
 
 
 
