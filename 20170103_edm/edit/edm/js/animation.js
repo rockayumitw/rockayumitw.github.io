@@ -7,7 +7,15 @@ $(document).ready(function (){
     var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
     var isIE = false || !!document.documentMode;*/
-
+function ani_opacity(){
+            $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').hide();
+            $('.part').css("opacity","0");
+            $('.title-bg').css("opacity","0");
+            $('.title-h1').css("opacity","0");
+            $('.title-p1').css("opacity","0");
+            $('.title-p2').css("opacity","0");
+            $('.title-h2').css("opacity","0");  
+        }
    
 
     var isIE = function(ver){
@@ -60,15 +68,7 @@ $(document).ready(function (){
 
 
 
-        function ani_opacity(){
-            $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').hide();
-            $('.part').css("opacity","0");
-            $('.title-bg').css("opacity","0");
-            $('.title-h1').css("opacity","0");
-            $('.title-p1').css("opacity","0");
-            $('.title-p2').css("opacity","0");
-            $('.title-h2').css("opacity","0");  
-        }
+        
 
         function partB(){
                 $('.part').css({width:'0px',height:'0px',left:'949px',top:'450px',opacity:'0',display:'block'});
