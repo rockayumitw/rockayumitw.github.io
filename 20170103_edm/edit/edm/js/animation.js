@@ -22,8 +22,7 @@ $(document).ready(function (){
 
     }
 
-if(isIE(9)||isIE(10)||isIE(11)){
-    
+
 
     setTimeout(partA,50);
         function partA(){            
@@ -43,7 +42,7 @@ if(isIE(9)||isIE(10)||isIE(11)){
             $(".title-h2").animate({opacity:'0',top:'74', left:'-321'},50);
             $(".title-h2").animate({opacity:'1',top:'74', left:'336'},800);   
         }
-}        
+    
 
     //if(isIE(9)){
 //IE8/9用的動畫
