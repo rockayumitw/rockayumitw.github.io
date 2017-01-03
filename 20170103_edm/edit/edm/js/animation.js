@@ -38,9 +38,9 @@ $(document).ready(function (){
 
         
      if(isIE(8)){
-        stopAnimation();
+       /* stopAnimation();*/
         ani_opacity();
-
+        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').show();
         setTimeout(titleA,1800); 
         setTimeout(partB,50);   
          }
@@ -56,6 +56,7 @@ $(document).ready(function (){
 
 
         function ani_opacity(){
+            $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').hide();
             $('.part').css("opacity","0");
             $('.title-bg').css("opacity","0");
             $('.title-h1').css("opacity","0");
