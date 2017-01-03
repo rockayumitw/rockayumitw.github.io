@@ -29,6 +29,17 @@ $(document).ready(function (){
         });
     }
 
+
+ if(isIE(8)){
+       /* stopAnimation();*/
+        ani_opacity();
+        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').show();
+/*setTimeout(titleA,1800); 
+        setTimeout(partB,50);   */
+         }
+
+
+
         if(isIE(9)){ 
             ani_opacity();
             setTimeout(partA,50);
@@ -37,13 +48,7 @@ $(document).ready(function (){
 
 
         
-     if(isIE(8)){
-       /* stopAnimation();*/
-        ani_opacity();
-        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').show();
-/*setTimeout(titleA,1800); 
-        setTimeout(partB,50);   */
-         }
+    
 
         /*function stopAnimation()
         {
