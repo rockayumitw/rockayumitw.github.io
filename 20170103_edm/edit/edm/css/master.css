@@ -69,13 +69,13 @@ img {
     opacity: 1;  
 }
 .part {
+    opacity: 0;
     width: 919px;
     height: 851px;
     position: absolute;
     z-index: 2;
     left: 749px;
-    top: 0;
-    opacity: 0; 
+    top: 0; 
     animation-duration: 2s;
     animation-name: parting;
     animation-iteration-count: 1;
@@ -100,13 +100,13 @@ img {
 }
 
 .title-bg {
+    opacity:0;
     width: 994px;
     height: 485px;
     position: absolute;
     z-index: 1;
     left: 292px;
     top: 80px;
-    opacity:0;
     animation-duration: 2s;
     animation-name: titleBging;
     animation-iteration-count: 1;
@@ -129,13 +129,13 @@ img {
 }
 
 .title-h1 {
+    opacity: 0; 
     width: 707px;
     height: 334px;
     position: absolute;
     z-index: 3;
     left: 435px;
     top: 122px;
-    opacity: 0; 
     animation-duration: 2s;
     animation-name: titleh1ing;
     animation-iteration-count: 1;
@@ -157,13 +157,13 @@ img {
 }
 
 .title-h2 {
+    opacity: 0; 
     width: 321px;
     height: 181px;
     position: absolute;
     z-index: 4;
     left: 336px;
     top: 74px;
-    opacity: 0; 
     animation-duration: 2s;
     animation-name: titleh2ing;
     animation-iteration-count: 1;
@@ -187,13 +187,13 @@ img {
 }
 
 .title-p1 {
+    opacity: 0; 
     width: 649px;
     height: 158px;
     position: absolute;
     z-index: 5;
     left: 640px;
     top: 402px;
-    opacity: 0; 
     animation-duration: 2s;
     animation-name: titlep1ing;
     animation-iteration-count: 1;
@@ -217,13 +217,13 @@ img {
 }
 
 .title-p2 {
+    opacity: 0;
     width: 642px;
     height: 150px;
     position: absolute;
     z-index: 5;
     left: 640px;
     top: 576px;
-    opacity: 0; 
     animation-duration: 2s;
     animation-name: titlep2ing;
     animation-iteration-count: 1;
