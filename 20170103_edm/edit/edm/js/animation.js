@@ -28,7 +28,7 @@ $(document).ready(function (){
     }
         
 
-    if(isIE(9)){
+    //if(isIE(9)){
 //IE8/9用的動畫
         
         setTimeout(partA,50);
@@ -50,7 +50,7 @@ $(document).ready(function (){
             $(".title-h2").animate({opacity:'1',top:'74', left:'336'},800);   
         }
      
-    }
+   // }
 
      if(isIE(8)){
         $('.part').css({opacity:"0",});

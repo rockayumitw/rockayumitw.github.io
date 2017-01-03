@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    border: none;
+    outline: none;
+    behavior:expression(this.onFocus=this.blur());
+}
 body {
     width: 1903px;
     height: auto;
@@ -60,7 +65,8 @@ img {
     position: absolute;
     z-index: 9;
     left: 1482px;
-    top: 15px;    
+    top: 15px;  
+    opacity: 1;  
 }
 .part {
     width: 919px;
@@ -68,12 +74,14 @@ img {
     position: absolute;
     z-index: 2;
     left: 749px;
-    top: 0; 
-    animation-duration: 2s;
+    top: 0;
+    opacity: 0; 
+  /*  animation-duration: 2s;
     animation-name: parting;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;*/
 }
 
+/*
 @keyframes parting {
     from {
         left: 500px;
@@ -89,7 +97,7 @@ img {
         filter: alpha(opacity=100);
     }
 }
-
+*/
 .title-bg {
     width: 994px;
     height: 485px;
@@ -97,12 +105,12 @@ img {
     z-index: 1;
     left: 292px;
     top: 80px;
-    /*opacity:0;*/
-    animation-duration: 2s;
+    opacity:0;
+  /*  animation-duration: 2s;
     animation-name: titleBging;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;*/
 }
-
+/*
 @keyframes titleBging {
     from {
         top: 200px;
@@ -116,7 +124,7 @@ img {
         filter: alpha(opacity=100);
     }
 
-}
+}*/
 
 .title-h1 {
     width: 707px;
@@ -125,11 +133,12 @@ img {
     z-index: 3;
     left: 435px;
     top: 122px;
-    animation-duration: 2s;
+    opacity: 0; 
+   /* animation-duration: 2s;
     animation-name: titleh1ing;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;*/
 }
-
+/*
 @keyframes titleh1ing {
     from {
         top: 270px;
@@ -142,7 +151,7 @@ img {
         opacity: 1;
         filter: alpha(opacity=100);
     }
-}
+}*/
 
 .title-h2 {
     width: 321px;
@@ -151,12 +160,13 @@ img {
     z-index: 4;
     left: 336px;
     top: 74px;
-    animation-duration: 2s;
+    opacity: 0; 
+   /* animation-duration: 2s;
     animation-name: titleh2ing;
     animation-iteration-count: 1;
-    animation-timing-function:ease-in;
+    animation-timing-function:ease-in;*/
 }
-
+/*
 @keyframes titleh2ing {
     from {        
         left: -321px;
@@ -168,7 +178,7 @@ img {
         left: 336px;        
     }
 }
-
+*/
 .title-p1 {
     width: 649px;
     height: 158px;
@@ -176,11 +186,12 @@ img {
     z-index: 5;
     left: 640px;
     top: 402px;
-    animation-duration: 2s;
+    opacity: 0; 
+   /* animation-duration: 2s;
     animation-name: titlep1ing;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;*/
 }
-
+/*
 @keyframes titlep1ing {
     from {
         left: 400px;
@@ -196,7 +207,7 @@ img {
         filter: alpha(opacity=100);
     }
 }
-
+*/
 .title-p2 {
     width: 642px;
     height: 150px;
@@ -204,10 +215,12 @@ img {
     z-index: 5;
     left: 640px;
     top: 576px;
-    animation-duration: 2s;
+    opacity: 0; 
+  /*  animation-duration: 2s;
     animation-name: titlep2ing;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;*/
 }
+/*
 @keyframes titlep2ing {
     from {
         left: 300px;
@@ -223,6 +236,7 @@ img {
         filter: alpha(opacity=100);
     }
 }
+*/
 .edm-a {
     width: 1903px;
     height: 675px;
