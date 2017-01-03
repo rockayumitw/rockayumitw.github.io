@@ -23,6 +23,13 @@ $(document).ready(function (){
     }
 
 
+        $('.part').css("opacity","0");
+        $('.title-bg').css("opacity","0");
+        $('.title-h1').css("opacity","0");
+        $('.title-p1').css("opacity","0");
+        $('.title-p2').css("opacity","0");
+        $('.title-h2').css("opacity","0");
+
 
     setTimeout(partA,50);
         function partA(){            
@@ -47,12 +54,7 @@ $(document).ready(function (){
     //if(isIE(9)){
 //IE8/9用的動畫
         
-        /*$('.part').css("opacity","0");
-        $('.title-bg').css("opacity","0");
-        $('.title-h1').css("opacity","0");
-        $('.title-p1').css("opacity","0");
-        $('.title-p2').css("opacity","0");
-        $('.title-h2').css("opacity","0");*/
+        
 
 
       
