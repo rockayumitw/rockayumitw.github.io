@@ -4,6 +4,9 @@ $(document).ready(function (){
     
     var isChrome = !!window.chrome && !!window.chrome.webstore;
     var isFirefox = typeof InstallTrigger !== 'undefined';
+    var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+    var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    
     var isIE = function(ver){
         var b = document.createElement('b')
         b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
@@ -29,7 +32,7 @@ $(document).ready(function (){
         $('.title-p2').css("opacity","0");
         $('.title-h2').css("opacity","0");
 
-        if(isIE(9)||isIE(10)||isIE(11)||isChrome||isFirefox){
+        if(isIE(9)||isIE(10)||isIE(11)||isChrome||isFirefox||isSafari||isOpera){
 
         setTimeout(partA,50);
         function partA(){            
@@ -53,11 +56,6 @@ $(document).ready(function (){
 
     //if(isIE(9)){
     //IE8/9用的動畫
-        
-        
-
-
-      
    // }
 
      if(isIE(8)){
