@@ -6,11 +6,13 @@ $(document).ready(function (){
     var isFirefox = typeof InstallTrigger !== 'undefined';
     var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    var isIE = false || !!document.documentMode;
 
     var isIE = function(ver){
         var b = document.createElement('b')
         b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
         return b.getElementsByTagName('i').length === 1
+        alert(isIE(ver));
     }
 
     if(isIE(8)||isIE(9)) {
@@ -25,17 +27,30 @@ $(document).ready(function (){
         });
     }
 
-        $('.part').css("opacity","0");
-        $('.title-bg').css("opacity","0");
-        $('.title-h1').css("opacity","0");
-        $('.title-p1').css("opacity","0");
-        $('.title-p2').css("opacity","0");
-        $('.title-h2').css("opacity","0");
+      
 
-        if(isIE(9)||isIE(10)||isIE(11)||isChrome||isFirefox||isSafari||isOpera){
-            
-
+       /* if(isIE)){
+            setTimeout(partA,50);
+            setTimeout(titleA,1800); 
+        }
+*/
+        if(isIE(9)){ 
+        ani_opacity();
         setTimeout(partA,50);
+        setTimeout(titleA,1800);  
+       
+        }
+
+        function ani_opacity(){
+            $('.part').css("opacity","0");
+            $('.title-bg').css("opacity","0");
+            $('.title-h1').css("opacity","0");
+            $('.title-p1').css("opacity","0");
+            $('.title-p2').css("opacity","0");
+            $('.title-h2').css("opacity","0");  
+        }
+          
+
         function partA(){            
             $('.part').animate({transform:'scale(.1)', left:'500', opacity:'0'},50);
             $('.part').animate({transform:'scale(1)', left:'749',opacity:'1'},2000);
@@ -48,32 +63,19 @@ $(document).ready(function (){
             $('.title-p2').animate({transform:'scale(.1)', top:'380',opacity:'0', left:'300'},50);
             $('.title-p2').animate({transform:'scale(1)', top:'576',opacity:'1', left:'640'},2000);  
         }
-        setTimeout(titleA,1800);        
         function titleA(){            
             $(".title-h2").animate({opacity:'0',top:'74', left:'-321'},50);
             $(".title-h2").animate({opacity:'1',top:'74', left:'336'},800);   
         }
-    }
 
-    //if(isIE(9)){
-    //IE8/9用的動畫
-   // }
+
+
 
      if(isIE(8)){
-      /*  $('.part').css({opacity:"0",});
-        $('.title-bg').css("opacity","0");
-        $('.title-h1').css("opacity","0");
-        $('.title-p1').css("opacity","0");
-        $('.title-p2').css("opacity","0");
-        $('.title-h2').css("opacity","0");*/
-
-       setTimeout(titleB,1800); 
-        function titleB(){            
-            $(".title-h2").animate({opacity:'0',top:'74', left:'-321'},50);
-            $(".title-h2").animate({opacity:'1',top:'74', left:'336'},800);   
-        }
-
-        setTimeout(partB,50); 
+        ani_opacity();
+        $('.title-h2').css("opacity","0");
+       setTimeout(titleA,1800); 
+       setTimeout(partB,50); 
 
         function partB(){
             $('.part').css({
@@ -173,11 +175,7 @@ $(document).ready(function (){
                 top:'576px',
                 opacity:'1'
         },2000);
-
-
-
         }
-
         }
   
 });
