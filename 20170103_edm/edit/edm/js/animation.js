@@ -2,11 +2,13 @@ $(document).ready(function (){
     /*$(window).load(function(){*/
 /*$(function(){*/
     
-    var isChrome = !!window.chrome && !!window.chrome.webstore;
+   /* var isChrome = !!window.chrome && !!window.chrome.webstore;
     var isFirefox = typeof InstallTrigger !== 'undefined';
     var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-    var isIE = false || !!document.documentMode;
+    var isIE = false || !!document.documentMode;*/
+
+   
 
     var isIE = function(ver){
         var b = document.createElement('b')
@@ -36,15 +38,24 @@ $(document).ready(function (){
 
         
      if(isIE(8)){
-        /*$(".title-h2, .part").hide();*/
+        stopAnimation();
         ani_opacity();
-        $('.title-h2').css("opacity","0");
-       /* $(".title-h2, .part").show();*/
+
         setTimeout(titleA,1800); 
         setTimeout(partB,50);   
          }
 
-          function ani_opacity(){
+        function stopAnimation()
+        {
+        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("-webkit-animation", "none");
+        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("-moz-animation", "none");
+        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("-ms-animation", "none");
+        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').css("animation", "none");
+        }
+
+
+
+        function ani_opacity(){
             $('.part').css("opacity","0");
             $('.title-bg').css("opacity","0");
             $('.title-h1').css("opacity","0");
