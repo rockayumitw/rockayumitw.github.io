@@ -19,7 +19,7 @@ img {
   border: 0px;
 }
 
-.part, .title-bg, .title-h1, .title-p1, .title-p2, .title-h2{opacity:0;}
+/*part, .title-bg, .title-h1, .title-p1, .title-p2, .title-h2{opacity:0;}*/
 
 .header {
     width: 1903px;
@@ -86,22 +86,6 @@ img {
 }
 
 
-@keyframes parting {
-    from {
-        left: 500px;
-        transform: scale(.1);
-        display:block;
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        left: 749px;
-        opacity: 1;
-        display:block;
-        filter: alpha(opacity=100);
-    }
-}
-
 .title-bg {
     opacity:0;
     width: 994px;
@@ -114,21 +98,6 @@ img {
     animation-name: titleBging;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-@keyframes titleBging {
-    from {
-        top: 200px;
-        transform: scale(.1);
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        top: 80px;
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-
 }
 
 .title-h1 {
@@ -145,19 +114,6 @@ img {
     animation-fill-mode: forwards;
 }
 
-@keyframes titleh1ing {
-    from {
-        top: 270px;
-        transform: scale(.1);
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        top: 122px;
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-}
 
 .title-h2 {
     opacity: 0; 
@@ -174,21 +130,6 @@ img {
     animation-fill-mode: forwards;
 }
 
-@keyframes titleh2ing {
-    from {        
-        left: -321px;
-        opacity: 0;
-    }
-    80% {
-        left: -321px;
-        opacity: 0;
-    }
-    to {
-        left: 336px;
-        opacity: 1;        
-    }
-}
-
 .title-p1 {
     opacity: 0; 
     width: 649px;
@@ -203,21 +144,6 @@ img {
     animation-fill-mode: forwards;
 }
 
-@keyframes titlep1ing {
-    from {
-        left: 400px;
-        top: 380px;
-        transform: scale(.1);
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        left: 640px;
-        top: 402px;
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-}
 
 .title-p2 {
     opacity: 0;
@@ -233,21 +159,6 @@ img {
     animation-fill-mode: forwards;
 }
 
-@keyframes titlep2ing {
-    from {
-        left: 300px;
-        top: 380px;
-        transform: scale(.1);
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    to {
-        left: 640px;
-        top: 576px;
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-}
 
 .edm-a {
     width: 1903px;
@@ -327,7 +238,7 @@ img {
 }
 .footer ul li {
     width: 120px;
-    height: 43px;	
+    height: 43px;   
     float: left;
     margin-right: 26px;
 }
@@ -340,9 +251,107 @@ img {
 
 
 
+/*<!--[if gte IE 9]>*/
+
+@keyframes parting {
+    from {
+        left: 500px;
+        transform: scale(.1);
+        display:block;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        left: 749px;
+        opacity: 1;
+        display:block;
+        filter: alpha(opacity=100);
+    }
+}
+
+
+@keyframes titleBging {
+    from {
+        top: 200px;
+        transform: scale(.1);
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        top: 80px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+}
 
 
 
+@keyframes titleh1ing {
+    from {
+        top: 270px;
+        transform: scale(.1);
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        top: 122px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+
+
+@keyframes titleh2ing {
+    from {        
+        left: -321px;
+        opacity: 0;
+    }
+    80% {
+        left: -321px;
+        opacity: 0;
+    }
+    to {
+        left: 336px;
+        opacity: 1;        
+    }
+}
+
+
+@keyframes titlep1ing {
+    from {
+        left: 400px;
+        top: 380px;
+        transform: scale(.1);
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        left: 640px;
+        top: 402px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+
+
+@keyframes titlep2ing {
+    from {
+        left: 300px;
+        top: 380px;
+        transform: scale(.1);
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    to {
+        left: 640px;
+        top: 576px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+
+/*<![endif]-->*/
 
 
 

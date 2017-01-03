@@ -8,7 +8,7 @@ $(document).ready(function (){
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
     var isIE = false || !!document.documentMode;*/
 function ani_opacity(){
-            $('.part, .title-bg, .title-h1, .title-p1, .title-p2, .title-h2').hide();
+           /* $('.part, .title-bg, .title-h1, .title-p1, .title-p2, .title-h2').hide();*/
             $('.part').css("opacity","0");
             $('.title-bg').css("opacity","0");
             $('.title-h1').css("opacity","0");
@@ -41,9 +41,9 @@ function ani_opacity(){
  if(isIE(8)){
        /* stopAnimation();*/
         ani_opacity();
-        $('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').show();
-/*setTimeout(titleA,1800); 
-        setTimeout(partB,50);   */
+        /*$('.part, .title-bg, .title-h1, .title-p1, .title-p2, title-h2').show();*/
+        setTimeout(titleA,1800); 
+        setTimeout(partB,50);   
          }
 
 
