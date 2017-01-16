@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.wipetouch.js"></script>
+<style>
+
+	.dd{
+		background: #666;
+		position: fixed;
+		top: -60px;
+		animation-duration: 0.3s;
+	}
+
+	.ss{
+		background: #666;
+		top: 0;
+	}
+
+</style>
+
+<script>
+	$(document).wipetouch({
+		wipeDown: function(result) { 
+			$('div').removeClass('dd');
+			$('div').addClass('ss');
+			
+		}
+	})
+</script>
+
+</head>
+<body>
+
+<div class="dd"> download </div>
+
+</body>
+</html>
