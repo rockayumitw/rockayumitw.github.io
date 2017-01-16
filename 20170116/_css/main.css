@@ -1,0 +1,54 @@
+﻿body {background:#8c0000 url('../_img/bg.jpg?r=20170116') top center no-repeat;margin: 0 auto;}
+div {display:block;}
+#dPageHolder {width:100%;height: auto;margin: 0 auto;padding: 0;max-width:1024px;}
+#topLink {position:absolute;width:100%;z-index:5;max-width:1024px;}
+#topLink>.links{position:relative;margin-top:16.5%;border:1px solid rgba(0,0,0,0);width:100%;/*height:1000px;*/}
+#dMainPhone {position:relative;max-width:1024px;margin:0 auto;z-index:0;}
+#link_home a, #link_fb a {position:relative;display:block;float:left;width:31%;/*padding-bottom:7.2%;height:98px;*/}
+.part1, .part2, .part3, .part4, .part5 {float:left;height:auto;}
+.part2 {
+    width:100%;
+    max-width:1024px;
+    position:relative;
+}
+.img-responsive {margin-top: 0px;}
+#link_fb a {left:24%;/*background:url(../_img/fb_btn.png?r=20161223) no-repeat;background-size:contain;*/}
+/*#link_fb a:hover {background:url(../_img/fb_hover.png?r=20161110) 0px 0px no-repeat;background-size:contain;}*/
+#link_home a {left:15%;/*background:url(../_img/bt_btn.png?r=20161223) no-repeat;background-size:contain;*/}
+/*#link_home a:hover{background:url(../_img/bt_hover.png?r=20161110) 0px 0px no-repeat;background-size:contain;}*/
+#moLoAppDownload {/*width:67.578125%;height:auto;position:absolute;margin:69.5% 0 0 -36%;*/ margin:0 auto;
+            text-align:center;
+            width:100%;
+            max-width:1024px;
+            position:absolute;
+            z-index:999;
+           /* top:14%;*/
+}
+#moLoAppDownload>a>img {
+            width:20%;
+            margin:0 auto;
+        }
+.clickmeBtn {
+    width:100%;
+    max-width:1024px;
+    position:relative;
+    background:red;
+}
+.clickmeBtn a {/*width:17.578125%;height:auto;  margin:62% 0 0 61%;padding-bottom:4%;
+              background:red;*/
+               position:absolute;
+               text-align:center;
+               width:50%;
+               max-width:1024px;
+               bottom:23%;
+               left:48%;
+               top:0;
+}
+
+/*彈跳教學*/
+#mask{top:0;left:0;width:100%;height:100%;background-color:black;opacity:0.7;position:fixed;z-index:1000;}
+#teach{position:fixed;z-index:2000;padding:4%;top:0;}
+#teach > img{width:100%;}
+#closeTeach{border:3px solid #fff;border-radius:90px;height:30px;width:30px;background-color:black;position:absolute;right:2%;top:2%;}
+#closeTeach>div{color:#fff;font-size:24px;line-height:20px;text-align:center;font-family: monospace;font-weight: bold;}
+.teachGroup{display:none;}
