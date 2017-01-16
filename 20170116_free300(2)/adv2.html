@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Document</title>
          <link href="_css/main.css?r=201701160411" rel="stylesheet" />
-         <script src="_js/jquery.js"></script>
+         <script src="_js/jquery-1.10.2.js"></script>
         <script src="_js/jgestures.js"></script>
         <style>
             #downloadBtn{
@@ -39,7 +39,7 @@
             }else if (uA.match(/Android/) || uA.match(/Windows Phone/)) {
                 $('.teachGroup').fadeIn();
                 $('#moLoAppDonload').attr('href','download/test.txt');
-
+                /*$("#moLoAppDownload").attr("href", getAPK(medium, "", "", activity));*/
                 $('html').bind('click', function () {
                         /*$("#moLoAppDownload").attr("href", getAPK(medium, "", "", activity));*/
                        
