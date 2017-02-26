@@ -1,0 +1,46 @@
+.span4{width:350px !important;}
+	.btnn{
+		margin-left: -350px !important;
+	}
+
+@media(min-width:1200px){
+	.span4{width:345px;text-align:center;margin:0 auto;}
+	/*.span4{width:350px;}*/
+
+}
+
+@media(max-width:767px){
+		/*.boxarea{width:50%;float:left;}*/
+		/*.box{width:50%;float:left;}*/
+		/*.pic{width:50%;float:left;}*/
+		.span4{
+			width: 44% !important;
+			float: left !important;
+		}
+
+}
+
+
+
+
+
+
+
+
+/*styles for 300 and up @ 16px!*/
+/* The max-width declaration below blocks this from ever working */
+/*
+@media only screen and (min-width: 18.75em){
+	body {
+		background: yellow;
+	}
+
+}*/
+
+
+/*styles for 480px - 620px @ 16px!*/
+/*@media only screen and (min-width: 30em) and (max-width: 38.75em) {
+	body {
+		background: green;
+	}
+}*/
